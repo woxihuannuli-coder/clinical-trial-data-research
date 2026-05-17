@@ -1,0 +1,67 @@
+# Clinical Trial Data Research & Dedup Pipeline
+
+## 프로젝트 개요
+
+ClinicalTrials.gov에서 수집한 우울증(Depression) 임상시험 데이터를 기반으로, 데이터 수집·정제·중복 제거·DB 적재·SQL 분석까지 진행한 데이터 리서치 프로젝트입니다.
+
+이 프로젝트의 목적은 임상시험 데이터를 분석 가능한 형태로 정리하고, NCT ID 기준 중복 제거와 SQL 기반 기본 분석 흐름을 경험하는 것입니다.
+
+## 데이터 출처
+
+- Source: ClinicalTrials.gov
+- Keyword: Depression
+- Format: CSV
+- Main Identifier: NCT ID
+
+## 작업 흐름
+
+```text
+CSV 다운로드
+→ 필요한 컬럼 선택
+→ 컬럼명 정리
+→ NCT ID 기준 중복 제거
+→ 날짜/문자열 컬럼 정제
+→ SQLite DB 적재
+→ DBeaver에서 SQL 분석
+→ 분석 리포트 작성
+```
+
+## 폴더구조
+```text
+clinical-trial-data-research/
+├── data/
+│   ├── raw_clinical_trials.csv
+│   ├── cleaned_base.csv
+│   ├── cleaned_trials.csv
+│   └── clinical_trials.db
+├── notebooks/
+│   ├── 02_data_cleaning_base.ipynb
+│   ├── 03_data_cleaning_dedup.ipynb
+│   └── 04_load_to_sqlite.ipynb
+├── sql/
+│   ├── 01_trial_summary.sql
+│   ├── 02_phase_status_analysis.sql
+│   └── 03_sponsor_country_analysis.sql
+└── docs/
+    └── insight_report.md
+```
+
+
+## 주요 분석 내용
+
+- 모집 상태별 임상시험 분포
+- Phase별 임상시험 분포
+- Sponsor별 임상시험 분포
+
+*자세한 분석 결과는 아래 문서에 정리했습니다.
+- [Insight Report](docs/insight_report.md)
+
+
+## 사용기술
+
+- Python
+- pandas
+- SQLite
+- DBeaver
+- SQL
+- Jupyter Notebook
