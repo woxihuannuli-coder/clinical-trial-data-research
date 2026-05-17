@@ -5,11 +5,17 @@
 
 ## 2. 데이터 처리 과정
  ㄱ. ClinicalTrials.gov에서 Depression 관련 임상시험 CSV 다운로드
+ 
  ㄴ. 분석에 필요한 컬럼 선택, 컬럼 이름을 snake_case로 변경
+ 
  ㄷ. 중복되는 nct_id를 제거함으로써 중복되는 임상시험 데이터를 제거
+ 
  ㄹ. 날짜 컬럼 datetime 변환
+ 
  ㅁ. 문자열 컬럼 공백 제거 및 빈 문자열 결측 처리
+ 
  ㅂ. 정제된 데이터를 SQLite DB에 적재
+ 
  ㅅ. DBeaver에서 SQL 분석 수행
 
  
