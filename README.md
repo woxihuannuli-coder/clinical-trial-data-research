@@ -1,10 +1,22 @@
+# Project Highlight
+
+이 프로젝트는 ClinicalTrials.gov 임상시험 데이터를 NCT ID 기준 중복 제거(dedup), 컬럼 표준화, 결측 처리, SQLite DB 적재, SQL 분석, 리포트 작성까지 연결한 데이터 리서치 MVP 프로젝트이다.
+
+- ClinicalTrials.gov 임상시험 CSV 데이터 수집
+- NCT ID 기준 중복 제거(dedup)
+- 컬럼명 표준화 및 결측 처리
+- SQLite DB 적재
+- DBeaver와 SQL을 활용한 임상시험 등록 현황 분석
+- Depression vs Anxiety 모집 상태, Phase, Sponsor 분포 비교
+
+
 # 1. Clinical Trial Data Research & Dedup Pipeline
 
 ## 프로젝트 개요
 
-ClinicalTrials.gov에서 수집한 우울증(Depression) 임상시험 데이터를 기반으로, 데이터 수집·정제·중복 제거·DB 적재·SQL 분석까지 진행한 데이터 리서치 프로젝트입니다.
+ClinicalTrials.gov에서 수집한 우울증(Depression) 임상시험 데이터를 기반으로, 데이터 수집·정제·중복 제거·DB 적재·SQL 분석까지 진행한 데이터 리서치 프로젝트이다.
 
-이 프로젝트의 목적은 임상시험 데이터를 분석 가능한 형태로 정리하고, NCT ID 기준 중복 제거와 SQL 기반 기본 분석 흐름을 경험하는 것입니다.
+이 프로젝트의 목적은 임상시험 데이터를 분석 가능한 형태로 정리하고, NCT ID 기준 중복 제거와 SQL 기반 기본 분석 흐름을 경험하는 것이다.
 
 ## 데이터 출처
 
@@ -53,7 +65,7 @@ clinical-trial-data-research/
 - Phase별 임상시험 분포
 - Sponsor별 임상시험 분포
 
-*자세한 분석 결과는 아래 문서에 정리했습니다.
+*자세한 분석 결과는 아래 문서에 정리했다.
 - [Insight Report](docs/insight_report.md)
 
 
