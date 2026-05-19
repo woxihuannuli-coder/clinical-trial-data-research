@@ -70,7 +70,7 @@ clinical-trial-data-research/
 
 
 
-## 2. Extension Analysis: Depression vs Anxiety Comparison
+# 2. Extension Analysis: Depression vs Anxiety Comparison
 
 기존 Depression 임상시험 데이터 처리 흐름을 재사용하여 Anxiety 임상시험 데이터를 추가로 수집·정제하고, 두 질환군의 임상시험 등록 현황을 비교했다.
 
