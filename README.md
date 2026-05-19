@@ -103,5 +103,8 @@ clinical-trial-data-research/
 - `docs/comparison_report.md`
 
 
+### 분석 관점
+본 분석은 환자 단위의 임상 결과가 아닌, NCT ID 기준 등록 메타데이터를 대상으로 한다. 모집 상태·Phase·Sponsor 분포를 통해 Depression과 Anxiety 임상시험의 등록 현황 패턴을 확인하는 것이 목적이다.
 
-NCT ID 기준으로 등록된 임상시험 연구의 메타데이터를 비교한 데이터 리서치 분석이다.
+자세한 비교 분석 결과는 아래 문서에 정리했습니다.
+- [Comparison Report](docs/comparison_report.md)
