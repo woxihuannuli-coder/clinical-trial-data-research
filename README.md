@@ -65,3 +65,32 @@ clinical-trial-data-research/
 - DBeaver
 - SQL
 - Jupyter Notebook
+
+
+
+
+
+
+## Extension Analysis: Depression vs Anxiety Comparison
+
+기존 Depression 임상시험 데이터 처리 흐름을 재사용하여 Anxiety 임상시험 데이터를 추가로 수집·정제하고, 두 질환군의 임상시험 등록 현황을 비교했다.
+
+### 분석 내용
+
+- Depression vs Anxiety 모집 상태 분포 비교
+- Depression vs Anxiety Phase 분포 비교
+- Depression vs Anxiety Sponsor Top 10 비교
+
+### 주요 산출물
+
+- `data/cleaned_anxiety_trials.csv`
+- `data/mental_health_trials.db`
+- `notebooks/06_anxiety_data_cleaning.ipynb`
+- `notebooks/07_depression_anxiety_comparison.ipynb`
+- `sql/04_condition_comparison.sql`
+- `sql/05_phase_sponsor_comparison.sql`
+- `docs/comparison_report.md`
+
+
+
+NCT ID 기준으로 등록된 임상시험 연구의 메타데이터를 비교한 데이터 리서치 분석이다.
